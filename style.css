@@ -1,0 +1,33 @@
+
+body{
+  background-color:#121212;
+  margin:0;
+  padding:0;
+}
+
+.container{
+  display: flex;
+}
+
+.slide{
+  visibility:hidden;
+  position:absolute;
+  left: 50%;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);
+}
+
+
+#sld1{
+  visibility: visible;
+}
+
+
+img{
+  max-height:100vh;
+  max-width:100vw;
+}
+
+.show{
+  visibility:show;
+}
