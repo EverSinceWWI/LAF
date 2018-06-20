@@ -55,16 +55,12 @@ document.onkeydown = function(e) {
 
 function nextSlide() {
   cs++
-  console.log('visible: sld'+cs);
-  console.log('hidden: sld'+(cs-1));
   document.getElementById("sld"+cs).style.visibility="visible";
   document.getElementById("sld"+(cs-1)).style.visibility="hidden";
 }
 
 function previousSlide() {
   cs--
-  console.log('visible: sld'+cs);
-  console.log('hidden: sld'+(cs+1));
   document.getElementById("sld"+cs).style.visibility="visible";
   document.getElementById("sld"+(cs+1)).style.visibility="hidden";
 }
