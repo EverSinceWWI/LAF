@@ -38,7 +38,7 @@ img {
     z-index: 1;
     left: 50%;
     right: 50%;
-    top: 70%;
+    top: 50%;
     transform: translateX(-50%);
     opacity: 1;
     border-radius: 6vh;
