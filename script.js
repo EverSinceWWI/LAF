@@ -1,6 +1,7 @@
 $(document).ready(function() {
   for (i=73; i>0; i--){
     document.getElementById("mainSection").innerHTML+="<div class='slide' id='sld"+i+"'><img src='slides/Lost&Found"+i+".png'></div>"
+    setTimeout(function(){document.getElementById("instruction").style.opacity = "0";}, 3000);
     };
   });
 
@@ -67,7 +68,5 @@ function previousSlide() {
 if (($( window ).width())<($( window ).height())) {
 
 };
-
-setTimeout(function(){document.getElementById("instruction").style.opacity = "0";}, 3000);
 
 document.oncontextmenu =new Function("return false;") //disabilità click destro del mouse
