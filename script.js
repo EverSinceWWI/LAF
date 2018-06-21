@@ -19,7 +19,7 @@ var cs = 1;
 // });
 
 $(document).mouseup(function(event) {
-  if(cs>73){
+  if(cs>73 || cs<0){
     cs=1;
     }
     switch (event.which) {
@@ -35,7 +35,7 @@ $(document).mouseup(function(event) {
 });
 
 document.onkeydown = function(e) {
-  if(cs>73){
+  if(cs>73 || cs<0){
     cs=1;
     }
     switch (e.keyCode) {
