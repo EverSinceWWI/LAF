@@ -1,7 +1,7 @@
 $(document).ready(function() {
   for (i=73; i>0; i--){
     document.getElementById("mainSection").innerHTML+="<div class='slide' id='sld"+i+"'><img src='slides/Lost&Found"+i+".png'></div>"
-    }
+    };
   });
 
 var cs = 1;
@@ -64,3 +64,10 @@ function previousSlide() {
   document.getElementById("sld"+cs).style.visibility="visible";
   document.getElementById("sld"+(cs+1)).style.visibility="hidden";
 }
+if (($( window ).width())<($( window ).height())) {
+
+};
+
+setTimeout(function(){document.getElementById("instruction").style.opacity = "0";}, 3000);
+
+document.oncontextmenu =new Function("return false;") //disabilità click destro del mouse
