@@ -7,17 +7,6 @@ $(document).ready(function() {
 
 var cs = 1;
 
-// $(document).click(function() {
-//   cs++
-//   if(cs>73){
-//     cs=1;
-//   }
-//   console.log('visible: sld'+cs);
-//   console.log('hidden: sld'+(cs-1));
-//   document.getElementById("sld"+cs).style.visibility="visible";
-//   document.getElementById("sld"+(cs-1)).style.visibility="hidden";
-// });
-
 $(document).mouseup(function(event) {
   if(cs>73 || cs<0){
     cs=1;
